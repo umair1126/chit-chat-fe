@@ -11,7 +11,7 @@ function getToken() {
 
 const instance = axios.create({
   // baseURL: `http://localhost:4002/api/v1`,
-  baseURL: `https://chit-chat-be-production-b146.up.railway.app/api/v1`,
+  baseURL: `https://chit-chat-be-production-a46e.up.railway.app/api/v1`,
 
   // baseURL: `http://35.78.181.56:4002/api/v1`,
   // baseURL: "http://13.231.192.73:4002/api/v1",
