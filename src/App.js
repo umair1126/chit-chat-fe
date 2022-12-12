@@ -1,4 +1,5 @@
 import Router from "./router/index";
+import React from "react";
 // import "antd/dist/antd.css";
 import { ToastContainer, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -14,6 +15,7 @@ import ru from "javascript-time-ago/locale/ru.json";
 
 TimeAgo.addDefaultLocale(en);
 TimeAgo.addLocale(ru);
+
 // // ..
 // AOS.init({
 //   offset: 200,

@@ -5,6 +5,7 @@ import ProtectedRoute from "./ProtectedRoutes";
 import Loader from "../components/Loader/Lodaer";
 
 import Chat from "../components/Chat/Index";
+import Blog from "../components/Blog/Blog";
 import Signup from "../components/Auth/Signup/Signup";
 import Signin from "../components/Auth/Signin/Signin";
 
@@ -18,6 +19,15 @@ export default function AppRoutes() {
           element={
             <ProtectedRoute>
               <Chat />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          exact
+          path="/blog"
+          element={
+            <ProtectedRoute>
+              <Blog />
             </ProtectedRoute>
           }
         />

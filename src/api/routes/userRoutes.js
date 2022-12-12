@@ -30,6 +30,14 @@ class Routes {
   addMessage(data) {
     return axios.post(`/user/add-message`, data);
   }
+
+  deleteGroup(id) {
+    return axios.delete(`/user/delete-group/${id}`);
+  }
+
+  onLeaveGroup(id, userId) {
+    return axios.patch(`/user/leave-group/${id}/${userId}`);
+  }
 }
 
 export default new Routes();

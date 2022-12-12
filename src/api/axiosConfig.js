@@ -10,15 +10,16 @@ function getToken() {
 }
 
 const instance = axios.create({
-  // baseURL: `https://city-locksmith-be.herokuapp.com/api`,
-  baseURL: `http://localhost:4002/api/v1`,
+  // baseURL: `http://localhost:4002/api/v1`,
+  baseURL: `https://chit-chat-be-production-b146.up.railway.app/api/v1`,
+
   // baseURL: `http://35.78.181.56:4002/api/v1`,
   // baseURL: "http://13.231.192.73:4002/api/v1",
 
-  headers: {
-    "Content-Type": "application/json",
-    "cache-control": "no-cache",
-  },
+  // headers: {
+  //   "Content-Type": "application/json",
+  //   "cache-control": "no-cache",
+  // },
 });
 
 instance.interceptors.request.use(
