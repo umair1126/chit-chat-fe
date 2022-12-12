@@ -97,8 +97,10 @@ const Index = () => {
 
   React.useEffect(() => {
     socket.current = io(
-      "wss://chit-chat-be-production-a46e.up.railway.app/:4003"
+      "wss://chit-chat-be-production-a46e.up.railway.app:4003"
     );
+
+    // socket.current = io("ws://13.231.192.73:4003");
     // socket.current = io.connect("ws://localhost:4003", {
     //   withCredentials: true,
     //   extraHeaders: {
